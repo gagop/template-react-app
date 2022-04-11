@@ -1,9 +1,9 @@
 import { FC, ReactElement } from 'react';
-import './SimpleButton.css';
+import styles from './SimpleButton.module.scss';
 
 const SimpleButton: FC<{ text: string }> = ({ text = 'Ok' }): ReactElement => {
   return (
-    <div className="Button">
+    <div className={styles.btn}>
       <button>{text}</button>
     </div>
   );
